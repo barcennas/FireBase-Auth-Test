@@ -1,0 +1,386 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B91BAF4B884926E6AF98AB7 /* Pods_pruebaAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB551555CA4450653B465E7 /* Pods_pruebaAuth.framework */; };
+		8E7473731DB01311008690DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7473721DB01311008690DB /* AppDelegate.swift */; };
+		8E7473751DB01311008690DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7473741DB01311008690DB /* ViewController.swift */; };
+		8E7473781DB01311008690DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E7473761DB01311008690DB /* Main.storyboard */; };
+		8E74737A1DB01311008690DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E7473791DB01311008690DB /* Assets.xcassets */; };
+		8E74737D1DB01311008690DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E74737B1DB01311008690DB /* LaunchScreen.storyboard */; };
+		8E7473851DB0132A008690DB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E7473841DB0132A008690DB /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		89FD1072B20AEB60A05E6AD8 /* Pods-pruebaAuth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pruebaAuth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pruebaAuth/Pods-pruebaAuth.debug.xcconfig"; sourceTree = "<group>"; };
+		8E74736F1DB01311008690DB /* pruebaAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pruebaAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E7473721DB01311008690DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8E7473741DB01311008690DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8E7473771DB01311008690DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8E7473791DB01311008690DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8E74737C1DB01311008690DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8E74737E1DB01311008690DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E7473841DB0132A008690DB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AAB551555CA4450653B465E7 /* Pods_pruebaAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pruebaAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE31B4201EF727B45C02DE4C /* Pods-pruebaAuth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pruebaAuth.release.xcconfig"; path = "Pods/Target Support Files/Pods-pruebaAuth/Pods-pruebaAuth.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E74736C1DB01311008690DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B91BAF4B884926E6AF98AB7 /* Pods_pruebaAuth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		056948C0F4221543DF352BFC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				89FD1072B20AEB60A05E6AD8 /* Pods-pruebaAuth.debug.xcconfig */,
+				EE31B4201EF727B45C02DE4C /* Pods-pruebaAuth.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8E7473661DB01311008690DB = {
+			isa = PBXGroup;
+			children = (
+				8E7473711DB01311008690DB /* pruebaAuth */,
+				8E7473701DB01311008690DB /* Products */,
+				056948C0F4221543DF352BFC /* Pods */,
+				D0559C1F91E6ACB6C27D3D02 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8E7473701DB01311008690DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E74736F1DB01311008690DB /* pruebaAuth.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E7473711DB01311008690DB /* pruebaAuth */ = {
+			isa = PBXGroup;
+			children = (
+				8E7473841DB0132A008690DB /* GoogleService-Info.plist */,
+				8E7473721DB01311008690DB /* AppDelegate.swift */,
+				8E7473741DB01311008690DB /* ViewController.swift */,
+				8E7473761DB01311008690DB /* Main.storyboard */,
+				8E7473791DB01311008690DB /* Assets.xcassets */,
+				8E74737B1DB01311008690DB /* LaunchScreen.storyboard */,
+				8E74737E1DB01311008690DB /* Info.plist */,
+			);
+			path = pruebaAuth;
+			sourceTree = "<group>";
+		};
+		D0559C1F91E6ACB6C27D3D02 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AAB551555CA4450653B465E7 /* Pods_pruebaAuth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E74736E1DB01311008690DB /* pruebaAuth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E7473811DB01311008690DB /* Build configuration list for PBXNativeTarget "pruebaAuth" */;
+			buildPhases = (
+				A090D991B3AEAEF450F37355 /* [CP] Check Pods Manifest.lock */,
+				8E74736B1DB01311008690DB /* Sources */,
+				8E74736C1DB01311008690DB /* Frameworks */,
+				8E74736D1DB01311008690DB /* Resources */,
+				2A9BC25790187C0CEFF7D310 /* [CP] Embed Pods Frameworks */,
+				74A15C573B43DF4B917F5AEE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pruebaAuth;
+			productName = pruebaAuth;
+			productReference = 8E74736F1DB01311008690DB /* pruebaAuth.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E7473671DB01311008690DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Abraham Barcenas M";
+				TargetAttributes = {
+					8E74736E1DB01311008690DB = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 8E74736A1DB01311008690DB /* Build configuration list for PBXProject "pruebaAuth" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8E7473661DB01311008690DB;
+			productRefGroup = 8E7473701DB01311008690DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E74736E1DB01311008690DB /* pruebaAuth */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E74736D1DB01311008690DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E74737D1DB01311008690DB /* LaunchScreen.storyboard in Resources */,
+				8E74737A1DB01311008690DB /* Assets.xcassets in Resources */,
+				8E7473781DB01311008690DB /* Main.storyboard in Resources */,
+				8E7473851DB0132A008690DB /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A9BC25790187C0CEFF7D310 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pruebaAuth/Pods-pruebaAuth-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74A15C573B43DF4B917F5AEE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pruebaAuth/Pods-pruebaAuth-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A090D991B3AEAEF450F37355 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E74736B1DB01311008690DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E7473751DB01311008690DB /* ViewController.swift in Sources */,
+				8E7473731DB01311008690DB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8E7473761DB01311008690DB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E7473771DB01311008690DB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8E74737B1DB01311008690DB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E74737C1DB01311008690DB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8E74737F1DB01311008690DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8E7473801DB01311008690DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8E7473821DB01311008690DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89FD1072B20AEB60A05E6AD8 /* Pods-pruebaAuth.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = pruebaAuth/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.barcenas.pruebaAuth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		8E7473831DB01311008690DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE31B4201EF727B45C02DE4C /* Pods-pruebaAuth.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = pruebaAuth/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.barcenas.pruebaAuth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E74736A1DB01311008690DB /* Build configuration list for PBXProject "pruebaAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E74737F1DB01311008690DB /* Debug */,
+				8E7473801DB01311008690DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E7473811DB01311008690DB /* Build configuration list for PBXNativeTarget "pruebaAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E7473821DB01311008690DB /* Debug */,
+				8E7473831DB01311008690DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E7473671DB01311008690DB /* Project object */;
+}
