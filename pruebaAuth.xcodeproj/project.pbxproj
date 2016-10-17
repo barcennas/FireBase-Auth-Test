@@ -126,6 +126,7 @@
 				TargetAttributes = {
 					8E74736E1DB01311008690DB = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = E5F4JMN6W8;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -338,6 +339,7 @@
 			baseConfigurationReference = 89FD1072B20AEB60A05E6AD8 /* Pods-pruebaAuth.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = E5F4JMN6W8;
 				INFOPLIST_FILE = pruebaAuth/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.barcenas.pruebaAuth;
@@ -351,6 +353,7 @@
 			baseConfigurationReference = EE31B4201EF727B45C02DE4C /* Pods-pruebaAuth.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = E5F4JMN6W8;
 				INFOPLIST_FILE = pruebaAuth/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.barcenas.pruebaAuth;

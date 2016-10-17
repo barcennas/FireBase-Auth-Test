@@ -38,6 +38,11 @@ class ViewController: UIViewController {
                 self.login()
             }else{
                 print("User Created")
+                let alert = UIAlertController(title: "Exito", message: "Usuario creado correctamente", preferredStyle: .alert)
+                
+                let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+                
+                alert.addAction(okAction)
                 self.login()
             }
         })
@@ -48,8 +53,18 @@ class ViewController: UIViewController {
             
             if error != nil {
                 print("Incorrect password")
+                let alert = UIAlertController(title: "Oops", message: "Usuario/Contraseña incorrecta", preferredStyle: .alert)
+                
+                let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+                
+                alert.addAction(okAction)
             }else{
                 print("Hecho")
+                let alert = UIAlertController(title: "Exito", message: "Te has logueado", preferredStyle: .alert)
+                
+                let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+                
+                alert.addAction(okAction)
             }
         })
     }
