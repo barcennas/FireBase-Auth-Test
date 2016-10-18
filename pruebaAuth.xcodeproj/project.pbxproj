@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0B91BAF4B884926E6AF98AB7 /* Pods_pruebaAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB551555CA4450653B465E7 /* Pods_pruebaAuth.framework */; };
+		8E1201651DB5886B00D403EC /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1201641DB5886B00D403EC /* TableViewController.swift */; };
 		8E7473731DB01311008690DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7473721DB01311008690DB /* AppDelegate.swift */; };
 		8E7473751DB01311008690DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7473741DB01311008690DB /* ViewController.swift */; };
 		8E7473781DB01311008690DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E7473761DB01311008690DB /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		89FD1072B20AEB60A05E6AD8 /* Pods-pruebaAuth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pruebaAuth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pruebaAuth/Pods-pruebaAuth.debug.xcconfig"; sourceTree = "<group>"; };
+		8E1201641DB5886B00D403EC /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		8E74736F1DB01311008690DB /* pruebaAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pruebaAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E7473721DB01311008690DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E7473741DB01311008690DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				8E7473841DB0132A008690DB /* GoogleService-Info.plist */,
 				8E7473721DB01311008690DB /* AppDelegate.swift */,
 				8E7473741DB01311008690DB /* ViewController.swift */,
+				8E1201641DB5886B00D403EC /* TableViewController.swift */,
 				8E7473761DB01311008690DB /* Main.storyboard */,
 				8E7473791DB01311008690DB /* Assets.xcassets */,
 				8E74737B1DB01311008690DB /* LaunchScreen.storyboard */,
@@ -217,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E7473751DB01311008690DB /* ViewController.swift in Sources */,
+				8E1201651DB5886B00D403EC /* TableViewController.swift in Sources */,
 				8E7473731DB01311008690DB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

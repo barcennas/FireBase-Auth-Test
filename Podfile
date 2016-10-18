@@ -8,4 +8,5 @@ target 'pruebaAuth' do
   # Pods for pruebaAuth
     pod 'Firebase'
     pod 'Firebase/Auth'
+    pod 'Firebase/Database'
 end

@@ -43,6 +43,8 @@ class ViewController: UIViewController {
                 let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
                 
                 alert.addAction(okAction)
+                self.present(alert, animated: true, completion: nil)
+                
                 self.login()
             }
         })
@@ -58,13 +60,16 @@ class ViewController: UIViewController {
                 let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
                 
                 alert.addAction(okAction)
+                self.present(alert, animated: true, completion: nil)
             }else{
                 print("Hecho")
-                let alert = UIAlertController(title: "Exito", message: "Te has logueado", preferredStyle: .alert)
+                /*let alert = UIAlertController(title: "Exito", message: "Te has logueado", preferredStyle: .alert)
                 
                 let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
                 
-                alert.addAction(okAction)
+                alert.addAction(okAction)*/
+                
+                self.performSegue(withIdentifier: "loginSegue", sender: nil)
             }
         })
     }
