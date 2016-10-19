@@ -10,7 +10,7 @@ import UIKit
 import Firebase
 import KVNProgress
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet var txtUsuario: UITextField!
     @IBOutlet var txtPassword: UITextField!
@@ -18,6 +18,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        txtUsuario.delegate = self
+        txtPassword.delegate =  self
+        self.hideKeyboardWhenTap()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -26,7 +29,23 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        //hace que cuando le orpimas al boton enter en el teclado se esconda el teclado
+        textField.resignFirstResponder()
+        return true
+    }
 
+    func hideKeyboardWhenTap(){
+        let tap = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
+        tap.numberOfTapsRequired = 1
+        view.addGestureRecognizer(tap)
+    }
+    
+    func dismissKeyboard(){
+        //oculta el teclado cuando se presiona cualquier lugar de la pantalla afuera del teclado
+        view.endEditing(true)
+    }
+    
     @IBAction func CreateUser(_ sender: UIButton) {
         
         let user = txtUsuario.text
