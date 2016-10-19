@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import KVNProgress
 
 class ViewController: UIViewController {
 
@@ -31,6 +32,7 @@ class ViewController: UIViewController {
         let user = txtUsuario.text
         let password = txtPassword.text
         
+        KVNProgress.show(withStatus: "Verificando")
         
         FIRAuth.auth()?.createUser(withEmail: user!, password: password!, completion: { (user, error) in
             
@@ -38,12 +40,14 @@ class ViewController: UIViewController {
                 self.login()
             }else{
                 print("User Created")
-                let alert = UIAlertController(title: "Exito", message: "Usuario creado correctamente", preferredStyle: .alert)
+                /*let alert = UIAlertController(title: "Exito", message: "Usuario creado correctamente", preferredStyle: .alert)
                 
                 let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
                 
                 alert.addAction(okAction)
-                self.present(alert, animated: true, completion: nil)
+                self.present(alert, animated: true, completion: nil)*/
+                
+                KVNProgress.showSuccess(withStatus: "Exito, usuario creado exitosamente")
                 
                 self.login()
             }
@@ -55,12 +59,13 @@ class ViewController: UIViewController {
             
             if error != nil {
                 print("Incorrect password")
-                let alert = UIAlertController(title: "Oops", message: "Usuario/Contraseña incorrecta", preferredStyle: .alert)
+                /*let alert = UIAlertController(title: "Oops", message: "Usuario/Contraseña incorrecta", preferredStyle: .alert)
                 
                 let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
                 
                 alert.addAction(okAction)
-                self.present(alert, animated: true, completion: nil)
+                self.present(alert, animated: true, completion: nil)*/
+                KVNProgress.showError(withStatus: "Error, Usuario/Contraseña incorrecta")
             }else{
                 print("Hecho")
                 /*let alert = UIAlertController(title: "Exito", message: "Te has logueado", preferredStyle: .alert)
@@ -68,10 +73,27 @@ class ViewController: UIViewController {
                 let okAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
                 
                 alert.addAction(okAction)*/
-                
-                self.performSegue(withIdentifier: "loginSegue", sender: nil)
+                KVNProgress.showSuccess(withStatus: "Nos da gusto volver a verte", completion: { 
+                    self.performSegue(withIdentifier: "loginSegue", sender: nil)
+                })
+                //self.performSegue(withIdentifier: "loginSegue", sender: nil)
             }
         })
+    }
+    
+    @IBAction func logout(segue: UIStoryboardSegue){
+        KVNProgress.show()
+        do{
+            try FIRAuth.auth()?.signOut()
+            txtUsuario.text = ""
+            txtPassword.text = ""
+            KVNProgress.showSuccess(withStatus: "Te esperamos pronto 👋🏻")
+            
+        } catch {
+            KVNProgress.showError(withStatus: "Oops Ocurrio un error en el proceso, intente mas tarde")
+            performSegue(withIdentifier: "loginSegue", sender: segue)
+            
+        }
     }
     
     

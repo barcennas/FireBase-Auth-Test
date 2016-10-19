@@ -61,7 +61,7 @@
             </objects>
             <point key="canvasLocation" x="974" y="139"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Posts-->
         <scene sceneID="2s7-Zz-Xna">
             <objects>
                 <tableViewController id="mdt-ZH-uiw" customClass="TableViewController" customModule="pruebaAuth" customModuleProvider="target" sceneMemberID="viewController">
@@ -104,8 +104,16 @@
                             <outlet property="delegate" destination="mdt-ZH-uiw" id="4FQ-V0-H9v"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Posts" id="svZ-UH-rBu">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="L0L-lo-M44">
+                            <connections>
+                                <segue destination="Cmy-Df-RO1" kind="unwind" identifier="unwindToViewController" unwindAction="logoutWithSegue:" id="A4u-sJ-1v8"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XV0-R0-DMr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Cmy-Df-RO1" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1901.5999999999999" y="138.98050974512745"/>
         </scene>

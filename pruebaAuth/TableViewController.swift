@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 import FirebaseDatabase
-
+import KVNProgress
 
 struct postStruct {
     let title : String!
@@ -29,6 +29,7 @@ class TableViewController: UITableViewController {
         
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addItem))
         
+        //self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(logout))
         
         self.databaseRef.child("Posts").queryOrderedByKey().observe(FIRDataEventType.childAdded, with: { (snapshot) in
             let value = snapshot.value as? NSDictionary

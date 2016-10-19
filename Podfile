@@ -9,4 +9,5 @@ target 'pruebaAuth' do
     pod 'Firebase'
     pod 'Firebase/Auth'
     pod 'Firebase/Database'
+    pod 'KVNProgress'
 end

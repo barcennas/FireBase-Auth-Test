@@ -7,71 +7,207 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9AF9FDC0643920843EC352E72E53BFAC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		CA2BB64382936A6F23BCE9CA2142C595 /* Pods-pruebaAuth-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BA53ACFD8B6E31BD464E317CFEDFBED /* Pods-pruebaAuth-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F519E5586930EE741F84517776D67BE7 /* Pods-pruebaAuth-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF91791998FF1382E8E0AB447BCEC55 /* Pods-pruebaAuth-dummy.m */; };
+		03EA9CD690A0AF8922F763D945B189F8 /* KVNProgress-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B576850FB4487006BCB3F22CC828014 /* KVNProgress-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		055110FD6F4064FF0D26BF8C7A34F6AB /* Pods-pruebaAuth-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FEF91791998FF1382E8E0AB447BCEC55 /* Pods-pruebaAuth-dummy.m */; };
+		0B8A58FC5E609C30628A10368696F0F6 /* KVNProgress-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B37581B6919901741BD4939BD6B8E5 /* KVNProgress-dummy.m */; };
+		2108B0E033FC9AAC4DC38A1895C83110 /* UIColor+KVNContrast.h in Headers */ = {isa = PBXBuildFile; fileRef = 28D23207919F8CC9D9D2DB79831CC544 /* UIColor+KVNContrast.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4425752A5B3D56F80BB90E64595A7AA7 /* UIImage+KVNImageEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C8CE3EBCA59EDC47310F1DA482674BD /* UIImage+KVNImageEffects.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4766AD78C96C4AB23FA5A2CDEF1951E2 /* KVNProgressConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = ED0CF2890E29EBBE601EA7B0F53E2700 /* KVNProgressConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D491D3D60445C9787BEB1DBFFFB5110 /* UIColor+KVNContrast.m in Sources */ = {isa = PBXBuildFile; fileRef = 61DC91E1242D4BE25A78099560B994BB /* UIColor+KVNContrast.m */; };
+		65D4262299268E9C48C4145A3F88803B /* KVNRotationViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = DAAC372C7C1D97DBAFD073FE13D759DC /* KVNRotationViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6BEF9CED97091974E222973F3B075691 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AC16880C32CD845EDDD0B2A567E787E /* QuartzCore.framework */; };
+		6F50E25C8F24B2E6F138200FBC203ECD /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F191BCFB5D357DAB66B147BC506CA21 /* GLKit.framework */; };
+		864F6E4A1AEB825E4175E3E226FEB1F7 /* Pods-pruebaAuth-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BA53ACFD8B6E31BD464E317CFEDFBED /* Pods-pruebaAuth-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		913D20100BA370058C9786D5CC99F456 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8ECFE76238F870C81C6582194FCE223 /* Foundation.framework */; };
+		93C95937D8AA0579D7C1C5C09D65ED7A /* KVNRotationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C44EA5A2B542A67D98B49E4A0E9A5C3 /* KVNRotationViewController.m */; };
+		98040D329D86ED21126968FE381C52D3 /* UIImage+KVNEmpty.m in Sources */ = {isa = PBXBuildFile; fileRef = 379C68BDA8296F5DC25184F0AE10ED9C /* UIImage+KVNEmpty.m */; };
+		9D5946AB533D51E460822B7297808329 /* KVNProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = D891CD65DF68060A9BC44ECB0F5984C0 /* KVNProgress.m */; };
+		B07A69C3794D941C2EA88B81F9A8417D /* UIImage+KVNEmpty.h in Headers */ = {isa = PBXBuildFile; fileRef = 78D488B84B73B95B69E4DE092E9C4F51 /* UIImage+KVNEmpty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C85E393097945FF79B62907DAF020702 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8ECFE76238F870C81C6582194FCE223 /* Foundation.framework */; };
+		D14CDF6E0A7B65C3116F5F8D3AE03D86 /* UIImage+KVNImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = ACD862E40E5FE854B1B40A95062A3472 /* UIImage+KVNImageEffects.m */; };
+		D3DB9892178912350E5B1F85BE31658F /* KVNProgressConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 6502EA159BBABB1108C7E3F0074F0D2F /* KVNProgressConfiguration.m */; };
+		D53ED592377EF6D41EA0103A0FC683B9 /* KVNProgressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC1202562A09040BA20329DDE526A5DD /* KVNProgressView.xib */; };
+		F19B795704A8C1CCA8B81BEB33354356 /* KVNProgress.h in Headers */ = {isa = PBXBuildFile; fileRef = 04C551563A23202C1332F1E5EF7DB6A7 /* KVNProgress.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C2A83D506E916987917CE5F290D03F1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03CEDB01DC9FCF232E28721AF9D03890;
+			remoteInfo = KVNProgress;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		001C203A7B8E4864C9D203BEB9CEB6BB /* Pods-pruebaAuth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-pruebaAuth.release.xcconfig"; sourceTree = "<group>"; };
-		35A20E59E47B7F678BBAE77A524B0307 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
-		369D10129ED2D9B4E205FFD1936D23ED /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
-		4761F87CFBF739E2A4D75031E7F2BDB7 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
+		04C551563A23202C1332F1E5EF7DB6A7 /* KVNProgress.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KVNProgress.h; path = KVNProgress/Classes/KVNProgress.h; sourceTree = "<group>"; };
+		0C44EA5A2B542A67D98B49E4A0E9A5C3 /* KVNRotationViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KVNRotationViewController.m; path = KVNProgress/Classes/KVNRotationViewController.m; sourceTree = "<group>"; };
+		1B576850FB4487006BCB3F22CC828014 /* KVNProgress-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KVNProgress-umbrella.h"; sourceTree = "<group>"; };
+		28D23207919F8CC9D9D2DB79831CC544 /* UIColor+KVNContrast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+KVNContrast.h"; path = "KVNProgress/Categories/UIColor+KVNContrast.h"; sourceTree = "<group>"; };
+		3160F65036857147AFD4D1CFFE6BC19F /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Analytics/Sources/Firebase.h; sourceTree = "<group>"; };
+		32BDFC31E9D184F2665AA929DD10EF9E /* KVNProgress.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KVNProgress.modulemap; sourceTree = "<group>"; };
+		36D38F488836D24D3811E4563BF4E501 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		379C68BDA8296F5DC25184F0AE10ED9C /* UIImage+KVNEmpty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+KVNEmpty.m"; path = "KVNProgress/Categories/UIImage+KVNEmpty.m"; sourceTree = "<group>"; };
 		4A60F97C5EF6EA3B93F7CA8BE4FA6871 /* Pods-pruebaAuth-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-pruebaAuth-acknowledgements.plist"; sourceTree = "<group>"; };
+		4C8CE3EBCA59EDC47310F1DA482674BD /* UIImage+KVNImageEffects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+KVNImageEffects.h"; path = "KVNProgress/Categories/UIImage+KVNImageEffects.h"; sourceTree = "<group>"; };
 		4F9A54199FFF8791B424DAA777B1CEAD /* Pods-pruebaAuth-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-pruebaAuth-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5450758B8577844500C5A67F9A48CD35 /* Pods_pruebaAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pruebaAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		55D3EB9CC2466094DD973029676A2472 /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleNetworkingUtilities.framework; path = Frameworks/GoogleNetworkingUtilities.framework; sourceTree = "<group>"; };
-		67BAE9A776C3F88B932EF65D29360537 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
+		558EFF01DE6AA15F7C362F873B9F26ED /* KVNProgress.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KVNProgress.xcconfig; sourceTree = "<group>"; };
+		61DC91E1242D4BE25A78099560B994BB /* UIColor+KVNContrast.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+KVNContrast.m"; path = "KVNProgress/Categories/UIColor+KVNContrast.m"; sourceTree = "<group>"; };
+		62A11F7DADD774E788D79DD0C66045D4 /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
+		6502EA159BBABB1108C7E3F0074F0D2F /* KVNProgressConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KVNProgressConfiguration.m; path = KVNProgress/Classes/KVNProgressConfiguration.m; sourceTree = "<group>"; };
+		689F62B50E09399F740BFE985AD7B809 /* KVNProgress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KVNProgress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AC16880C32CD845EDDD0B2A567E787E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		6BA7760D5F6670CEB5B6DCA8BF32747E /* Pods-pruebaAuth-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-pruebaAuth-frameworks.sh"; sourceTree = "<group>"; };
-		6DA80F28E707D0599C30527A29D87031 /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAuth.framework; path = Frameworks/frameworks/FirebaseAuth.framework; sourceTree = "<group>"; };
+		6BD02096B63C5083F5473DA6E4F8BC9B /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		6F191BCFB5D357DAB66B147BC506CA21 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/GLKit.framework; sourceTree = DEVELOPER_DIR; };
+		78D488B84B73B95B69E4DE092E9C4F51 /* UIImage+KVNEmpty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+KVNEmpty.h"; path = "KVNProgress/Categories/UIImage+KVNEmpty.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		989464E3C4DE93D69DC764A18A7CE1C1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BA401DC3BBBBCEF1D5C5F3CEFD14F90 /* Pods-pruebaAuth.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-pruebaAuth.modulemap"; sourceTree = "<group>"; };
 		9BA53ACFD8B6E31BD464E317CFEDFBED /* Pods-pruebaAuth-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-pruebaAuth-umbrella.h"; sourceTree = "<group>"; };
+		9CBCAA5E882BCF22B64ED856E5CFB111 /* Pods_pruebaAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pruebaAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A70420502F1243F92CB5EF66B9417697 /* KVNProgress-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KVNProgress-prefix.pch"; sourceTree = "<group>"; };
+		ACD862E40E5FE854B1B40A95062A3472 /* UIImage+KVNImageEffects.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+KVNImageEffects.m"; path = "KVNProgress/Categories/UIImage+KVNImageEffects.m"; sourceTree = "<group>"; };
+		AE9FC913B2AAFFCFB0C5E528D38062AF /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
+		B04D850A2CEF2746CF2AD63BCA5040A7 /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAuth.framework; path = Frameworks/frameworks/FirebaseAuth.framework; sourceTree = "<group>"; };
 		B28BB914413089955C55D4820C4AC62C /* Pods-pruebaAuth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-pruebaAuth.debug.xcconfig"; sourceTree = "<group>"; };
-		C765F70B6D615A1ECA745D1F89F849A2 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Analytics/Sources/Firebase.h; sourceTree = "<group>"; };
+		C673B1451E8B0E0C35F62058354B17A4 /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleNetworkingUtilities.framework; path = Frameworks/GoogleNetworkingUtilities.framework; sourceTree = "<group>"; };
 		CB3DEA9913C064FA93AC7B42E19F8E3F /* Pods-pruebaAuth-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-pruebaAuth-resources.sh"; sourceTree = "<group>"; };
-		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		DF8867CEFFD1290017854B6F2C1C8A7E /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Sources/FIRInstanceID.h; sourceTree = "<group>"; };
-		EB7A564D36A7D9E62CD7CDA67B579F51 /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
-		F847ABE6512B2018E8ED69364605DE26 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
+		D824F9122F3396E723D4A9CBDDCA37E9 /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Sources/FIRInstanceID.h; sourceTree = "<group>"; };
+		D891CD65DF68060A9BC44ECB0F5984C0 /* KVNProgress.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KVNProgress.m; path = KVNProgress/Classes/KVNProgress.m; sourceTree = "<group>"; };
+		D8ECFE76238F870C81C6582194FCE223 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D9B37581B6919901741BD4939BD6B8E5 /* KVNProgress-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KVNProgress-dummy.m"; sourceTree = "<group>"; };
+		DAAC372C7C1D97DBAFD073FE13D759DC /* KVNRotationViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KVNRotationViewController.h; path = KVNProgress/Classes/KVNRotationViewController.h; sourceTree = "<group>"; };
+		DCCB4D3ACA2BAFC7FF9BA438E0D979E1 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
+		E7AE47CBE4C69C8933A51BDE5BF96F83 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
+		ED0CF2890E29EBBE601EA7B0F53E2700 /* KVNProgressConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KVNProgressConfiguration.h; path = KVNProgress/Classes/KVNProgressConfiguration.h; sourceTree = "<group>"; };
+		F1480ECBD0E7F716781FA054BB3F06D3 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		FC1202562A09040BA20329DDE526A5DD /* KVNProgressView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = KVNProgressView.xib; path = KVNProgress/Resources/KVNProgressView.xib; sourceTree = "<group>"; };
 		FEF91791998FF1382E8E0AB447BCEC55 /* Pods-pruebaAuth-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-pruebaAuth-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E6413DF29CCDBEDD8FF1555FE65475E7 /* Frameworks */ = {
+		667B3555523E63B80BFAC0B41DBF0028 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AF9FDC0643920843EC352E72E53BFAC /* Foundation.framework in Frameworks */,
+				913D20100BA370058C9786D5CC99F456 /* Foundation.framework in Frameworks */,
+				6F50E25C8F24B2E6F138200FBC203ECD /* GLKit.framework in Frameworks */,
+				6BEF9CED97091974E222973F3B075691 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80859FD98C10BA501CD6A426C7181A2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C85E393097945FF79B62907DAF020702 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2C31E0233017FB1BFBCB33F7354A2D22 /* GoogleUtilities */ = {
+		02EA1FA4FB8B6F4815D25EE0564B93C5 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D281E91283F793E8CA75412349F48963 /* Frameworks */,
+				D71FA2902929DEFCF92225947D41DC1D /* Firebase */,
+				2A2B3DD809BB91C2BECDD317F2CC5212 /* FirebaseAnalytics */,
+				688BF3E29FAD1AAC335CF64C3FCB55C7 /* FirebaseAuth */,
+				266DED0E0E4E4C41B68EF40483AF0E3A /* FirebaseDatabase */,
+				FC27930414EB9B32618164EFFB5743CC /* FirebaseInstanceID */,
+				47C761749279EA8102F665AF0A6DE3F1 /* GoogleInterchangeUtilities */,
+				38DD19C16151526C6664BD031B763C22 /* GoogleNetworkingUtilities */,
+				BB32B0C45D916086D961700D559B91CA /* GoogleSymbolUtilities */,
+				93B1C5B5BF628DA4861A6CC145C608DC /* GoogleUtilities */,
+				C199A1A9304CE117709F2BB0FCA32B58 /* KVNProgress */,
 			);
-			path = GoogleUtilities;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		3CD7E1E23ECF34FDF931C0381F479D8C /* GoogleSymbolUtilities */ = {
+		0616E659F22A8B30B455FD9CFB0E872A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				46A8763392E22D8E8B274B0E2D7D1550 /* Frameworks */,
+				689F62B50E09399F740BFE985AD7B809 /* KVNProgress.framework */,
+				9CBCAA5E882BCF22B64ED856E5CFB111 /* Pods_pruebaAuth.framework */,
 			);
-			path = GoogleSymbolUtilities;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+		0B246C9F28C98EDEE42773D5CE161D3A /* Analytics */ = {
 			isa = PBXGroup;
 			children = (
-				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+				3160F65036857147AFD4D1CFFE6BC19F /* Firebase.h */,
+			);
+			name = Analytics;
+			sourceTree = "<group>";
+		};
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				356CAE8572C7C75FCB05E984CEB70677 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		266DED0E0E4E4C41B68EF40483AF0E3A /* FirebaseDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				674D64FEE50D34CCFA11EEC9359F552A /* Frameworks */,
+			);
+			path = FirebaseDatabase;
+			sourceTree = "<group>";
+		};
+		27F8763F1EFA8FA738918D44A7B495AA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FC1202562A09040BA20329DDE526A5DD /* KVNProgressView.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2A2B3DD809BB91C2BECDD317F2CC5212 /* FirebaseAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				FCAB437FF0765E43102475F261D19B57 /* Frameworks */,
+			);
+			path = FirebaseAnalytics;
+			sourceTree = "<group>";
+		};
+		2FF4EC1A238683DD42C08F909911F064 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE9FC913B2AAFFCFB0C5E528D38062AF /* GoogleUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		356CAE8572C7C75FCB05E984CEB70677 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D8ECFE76238F870C81C6582194FCE223 /* Foundation.framework */,
+				6F191BCFB5D357DAB66B147BC506CA21 /* GLKit.framework */,
+				6AC16880C32CD845EDDD0B2A567E787E /* QuartzCore.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		38DD19C16151526C6664BD031B763C22 /* GoogleNetworkingUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				EE5AADAE4C8042CC202E1D45BF3B3E3E /* Frameworks */,
+			);
+			path = GoogleNetworkingUtilities;
+			sourceTree = "<group>";
+		};
+		3C291AFCB63B26F009170FCEFC690595 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DCCB4D3ACA2BAFC7FF9BA438E0D979E1 /* GoogleSymbolUtilities.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		3EC9EA801827DCF02B5CF8882B44B47B /* Pods-pruebaAuth */ = {
@@ -92,77 +228,28 @@
 			path = "Target Support Files/Pods-pruebaAuth";
 			sourceTree = "<group>";
 		};
-		436814AD526CBEF2976C2C3D6629CACE /* Analytics */ = {
+		47C761749279EA8102F665AF0A6DE3F1 /* GoogleInterchangeUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				C765F70B6D615A1ECA745D1F89F849A2 /* Firebase.h */,
+				9DCF39F5D57B33DB210DD4B3BBD84EA7 /* Frameworks */,
 			);
-			name = Analytics;
+			path = GoogleInterchangeUtilities;
 			sourceTree = "<group>";
 		};
-		46A8763392E22D8E8B274B0E2D7D1550 /* Frameworks */ = {
+		674D64FEE50D34CCFA11EEC9359F552A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4761F87CFBF739E2A4D75031E7F2BDB7 /* GoogleSymbolUtilities.framework */,
+				E7AE47CBE4C69C8933A51BDE5BF96F83 /* FirebaseDatabase.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		5C70F7225A55D654CC45856840D1C7EA /* Firebase */ = {
+		688BF3E29FAD1AAC335CF64C3FCB55C7 /* FirebaseAuth */ = {
 			isa = PBXGroup;
 			children = (
-				436814AD526CBEF2976C2C3D6629CACE /* Analytics */,
+				CB091F134289E873162998179E9AE20D /* Frameworks */,
 			);
-			path = Firebase;
-			sourceTree = "<group>";
-		};
-		64D2C7DBA2B6D0DBEF7D768DCE48C89F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				35A20E59E47B7F678BBAE77A524B0307 /* FirebaseInstanceID.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		67B058AFA7F59DCEA4EE2A2F0AFF298D /* FirebaseInstanceID */ = {
-			isa = PBXGroup;
-			children = (
-				DF8867CEFFD1290017854B6F2C1C8A7E /* FIRInstanceID.h */,
-				64D2C7DBA2B6D0DBEF7D768DCE48C89F /* Frameworks */,
-			);
-			path = FirebaseInstanceID;
-			sourceTree = "<group>";
-		};
-		6926ECF7C779A470DCBC96D030CC6A83 /* FirebaseAnalytics */ = {
-			isa = PBXGroup;
-			children = (
-				A4C27CD9DB001E80EC21B294BEBEAAE1 /* Frameworks */,
-			);
-			path = FirebaseAnalytics;
-			sourceTree = "<group>";
-		};
-		6A7093A972E338FDCB1503327A5A108F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				67BAE9A776C3F88B932EF65D29360537 /* FirebaseDatabase.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		6E9F397AE79C26FBE9C8767EB7C6BF89 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				5C70F7225A55D654CC45856840D1C7EA /* Firebase */,
-				6926ECF7C779A470DCBC96D030CC6A83 /* FirebaseAnalytics */,
-				B975A4AA5B5C2F4A8E3D75B69E5E97DB /* FirebaseAuth */,
-				72FF4AA34B51053F6345C9700A854DCB /* FirebaseDatabase */,
-				67B058AFA7F59DCEA4EE2A2F0AFF298D /* FirebaseInstanceID */,
-				DBFFACE7C9ED8EC5C7CC42F190190BC4 /* GoogleInterchangeUtilities */,
-				A14C6E4BB4CB955E28A2A2AA42AF62F7 /* GoogleNetworkingUtilities */,
-				3CD7E1E23ECF34FDF931C0381F479D8C /* GoogleSymbolUtilities */,
-				2C31E0233017FB1BFBCB33F7354A2D22 /* GoogleUtilities */,
-			);
-			name = Pods;
+			path = FirebaseAuth;
 			sourceTree = "<group>";
 		};
 		6EB4FDD9769BE9F5C5297026DD8E2EB0 /* Targets Support Files */ = {
@@ -173,101 +260,121 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		72FF4AA34B51053F6345C9700A854DCB /* FirebaseDatabase */ = {
+		752D68355B5F6D1D8D50E667059785BA /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				6A7093A972E338FDCB1503327A5A108F /* Frameworks */,
+				36D38F488836D24D3811E4563BF4E501 /* Info.plist */,
+				32BDFC31E9D184F2665AA929DD10EF9E /* KVNProgress.modulemap */,
+				558EFF01DE6AA15F7C362F873B9F26ED /* KVNProgress.xcconfig */,
+				D9B37581B6919901741BD4939BD6B8E5 /* KVNProgress-dummy.m */,
+				A70420502F1243F92CB5EF66B9417697 /* KVNProgress-prefix.pch */,
+				1B576850FB4487006BCB3F22CC828014 /* KVNProgress-umbrella.h */,
 			);
-			path = FirebaseDatabase;
+			name = "Support Files";
+			path = "../Target Support Files/KVNProgress";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				6E9F397AE79C26FBE9C8767EB7C6BF89 /* Pods */,
-				CE096FF49A5B3A30DF5C6E9177588ADD /* Products */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				02EA1FA4FB8B6F4815D25EE0564B93C5 /* Pods */,
+				0616E659F22A8B30B455FD9CFB0E872A /* Products */,
 				6EB4FDD9769BE9F5C5297026DD8E2EB0 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		A14C6E4BB4CB955E28A2A2AA42AF62F7 /* GoogleNetworkingUtilities */ = {
+		93B1C5B5BF628DA4861A6CC145C608DC /* GoogleUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				A81D21B5302AB8375EEFBF24421919DF /* Frameworks */,
+				2FF4EC1A238683DD42C08F909911F064 /* Frameworks */,
 			);
-			path = GoogleNetworkingUtilities;
+			path = GoogleUtilities;
 			sourceTree = "<group>";
 		};
-		A4C27CD9DB001E80EC21B294BEBEAAE1 /* Frameworks */ = {
+		9DCF39F5D57B33DB210DD4B3BBD84EA7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				369D10129ED2D9B4E205FFD1936D23ED /* FirebaseAnalytics.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		A6E49B499546589686E163EECC8085DF /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				EB7A564D36A7D9E62CD7CDA67B579F51 /* GoogleInterchangeUtilities.framework */,
+				62A11F7DADD774E788D79DD0C66045D4 /* GoogleInterchangeUtilities.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A81D21B5302AB8375EEFBF24421919DF /* Frameworks */ = {
+		BB32B0C45D916086D961700D559B91CA /* GoogleSymbolUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				55D3EB9CC2466094DD973029676A2472 /* GoogleNetworkingUtilities.framework */,
+				3C291AFCB63B26F009170FCEFC690595 /* Frameworks */,
+			);
+			path = GoogleSymbolUtilities;
+			sourceTree = "<group>";
+		};
+		C199A1A9304CE117709F2BB0FCA32B58 /* KVNProgress */ = {
+			isa = PBXGroup;
+			children = (
+				04C551563A23202C1332F1E5EF7DB6A7 /* KVNProgress.h */,
+				D891CD65DF68060A9BC44ECB0F5984C0 /* KVNProgress.m */,
+				ED0CF2890E29EBBE601EA7B0F53E2700 /* KVNProgressConfiguration.h */,
+				6502EA159BBABB1108C7E3F0074F0D2F /* KVNProgressConfiguration.m */,
+				DAAC372C7C1D97DBAFD073FE13D759DC /* KVNRotationViewController.h */,
+				0C44EA5A2B542A67D98B49E4A0E9A5C3 /* KVNRotationViewController.m */,
+				28D23207919F8CC9D9D2DB79831CC544 /* UIColor+KVNContrast.h */,
+				61DC91E1242D4BE25A78099560B994BB /* UIColor+KVNContrast.m */,
+				78D488B84B73B95B69E4DE092E9C4F51 /* UIImage+KVNEmpty.h */,
+				379C68BDA8296F5DC25184F0AE10ED9C /* UIImage+KVNEmpty.m */,
+				4C8CE3EBCA59EDC47310F1DA482674BD /* UIImage+KVNImageEffects.h */,
+				ACD862E40E5FE854B1B40A95062A3472 /* UIImage+KVNImageEffects.m */,
+				27F8763F1EFA8FA738918D44A7B495AA /* Resources */,
+				752D68355B5F6D1D8D50E667059785BA /* Support Files */,
+			);
+			path = KVNProgress;
+			sourceTree = "<group>";
+		};
+		CB091F134289E873162998179E9AE20D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B04D850A2CEF2746CF2AD63BCA5040A7 /* FirebaseAuth.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B975A4AA5B5C2F4A8E3D75B69E5E97DB /* FirebaseAuth */ = {
+		D71FA2902929DEFCF92225947D41DC1D /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
-				DEB9FEC781F1CE4AE7D7D1DB7D979A87 /* Frameworks */,
+				0B246C9F28C98EDEE42773D5CE161D3A /* Analytics */,
 			);
-			path = FirebaseAuth;
+			path = Firebase;
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		DB68E4548E91DA120E2E521C01FB6E4E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		CE096FF49A5B3A30DF5C6E9177588ADD /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5450758B8577844500C5A67F9A48CD35 /* Pods_pruebaAuth.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		D281E91283F793E8CA75412349F48963 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F847ABE6512B2018E8ED69364605DE26 /* GoogleUtilities.framework */,
+				6BD02096B63C5083F5473DA6E4F8BC9B /* FirebaseInstanceID.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DBFFACE7C9ED8EC5C7CC42F190190BC4 /* GoogleInterchangeUtilities */ = {
+		EE5AADAE4C8042CC202E1D45BF3B3E3E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A6E49B499546589686E163EECC8085DF /* Frameworks */,
+				C673B1451E8B0E0C35F62058354B17A4 /* GoogleNetworkingUtilities.framework */,
 			);
-			path = GoogleInterchangeUtilities;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		DEB9FEC781F1CE4AE7D7D1DB7D979A87 /* Frameworks */ = {
+		FC27930414EB9B32618164EFFB5743CC /* FirebaseInstanceID */ = {
 			isa = PBXGroup;
 			children = (
-				6DA80F28E707D0599C30527A29D87031 /* FirebaseAuth.framework */,
+				D824F9122F3396E723D4A9CBDDCA37E9 /* FIRInstanceID.h */,
+				DB68E4548E91DA120E2E521C01FB6E4E /* Frameworks */,
+			);
+			path = FirebaseInstanceID;
+			sourceTree = "<group>";
+		};
+		FCAB437FF0765E43102475F261D19B57 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F1480ECBD0E7F716781FA054BB3F06D3 /* FirebaseAnalytics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -275,32 +382,65 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		3AF475BEF9F0E6FDC112ECC906F0D991 /* Headers */ = {
+		B4DCCE45F558356489BB0711A4AEB8D5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA2BB64382936A6F23BCE9CA2142C595 /* Pods-pruebaAuth-umbrella.h in Headers */,
+				864F6E4A1AEB825E4175E3E226FEB1F7 /* Pods-pruebaAuth-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC32142B3BC57B70D461BE16A68E207E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03EA9CD690A0AF8922F763D945B189F8 /* KVNProgress-umbrella.h in Headers */,
+				F19B795704A8C1CCA8B81BEB33354356 /* KVNProgress.h in Headers */,
+				4766AD78C96C4AB23FA5A2CDEF1951E2 /* KVNProgressConfiguration.h in Headers */,
+				65D4262299268E9C48C4145A3F88803B /* KVNRotationViewController.h in Headers */,
+				2108B0E033FC9AAC4DC38A1895C83110 /* UIColor+KVNContrast.h in Headers */,
+				B07A69C3794D941C2EA88B81F9A8417D /* UIImage+KVNEmpty.h in Headers */,
+				4425752A5B3D56F80BB90E64595A7AA7 /* UIImage+KVNImageEffects.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		8D04B02FC7F410D3E40E7147A2975845 /* Pods-pruebaAuth */ = {
+		03CEDB01DC9FCF232E28721AF9D03890 /* KVNProgress */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E98E0A1ED63965068069961D6B148845 /* Build configuration list for PBXNativeTarget "Pods-pruebaAuth" */;
+			buildConfigurationList = A3A023797D4523E94A2A8B9574BB7E9E /* Build configuration list for PBXNativeTarget "KVNProgress" */;
 			buildPhases = (
-				87B87C6FB5039EC7571E37A7BD55D153 /* Sources */,
-				E6413DF29CCDBEDD8FF1555FE65475E7 /* Frameworks */,
-				3AF475BEF9F0E6FDC112ECC906F0D991 /* Headers */,
+				F6ED10A09936471D19508DFD9DA1C1E8 /* Sources */,
+				667B3555523E63B80BFAC0B41DBF0028 /* Frameworks */,
+				CC32142B3BC57B70D461BE16A68E207E /* Headers */,
+				9E1E09238CA0425F0B1F338FEE5A511A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
+			name = KVNProgress;
+			productName = KVNProgress;
+			productReference = 689F62B50E09399F740BFE985AD7B809 /* KVNProgress.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		168DDA079303D53DBF83B9834A399339 /* Pods-pruebaAuth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABF3666E7B4D55E2410DB22BA3AA7A50 /* Build configuration list for PBXNativeTarget "Pods-pruebaAuth" */;
+			buildPhases = (
+				17129DA555F2DF586A79A3A035F6674A /* Sources */,
+				80859FD98C10BA501CD6A426C7181A2E /* Frameworks */,
+				B4DCCE45F558356489BB0711A4AEB8D5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B23A921C24BF420F9CF8128C21FB3B20 /* PBXTargetDependency */,
+			);
 			name = "Pods-pruebaAuth";
 			productName = "Pods-pruebaAuth";
-			productReference = 5450758B8577844500C5A67F9A48CD35 /* Pods_pruebaAuth.framework */;
+			productReference = 9CBCAA5E882BCF22B64ED856E5CFB111 /* Pods_pruebaAuth.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -320,62 +460,62 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = CE096FF49A5B3A30DF5C6E9177588ADD /* Products */;
+			productRefGroup = 0616E659F22A8B30B455FD9CFB0E872A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8D04B02FC7F410D3E40E7147A2975845 /* Pods-pruebaAuth */,
+				03CEDB01DC9FCF232E28721AF9D03890 /* KVNProgress */,
+				168DDA079303D53DBF83B9834A399339 /* Pods-pruebaAuth */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		9E1E09238CA0425F0B1F338FEE5A511A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D53ED592377EF6D41EA0103A0FC683B9 /* KVNProgressView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		87B87C6FB5039EC7571E37A7BD55D153 /* Sources */ = {
+		17129DA555F2DF586A79A3A035F6674A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F519E5586930EE741F84517776D67BE7 /* Pods-pruebaAuth-dummy.m in Sources */,
+				055110FD6F4064FF0D26BF8C7A34F6AB /* Pods-pruebaAuth-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6ED10A09936471D19508DFD9DA1C1E8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B8A58FC5E609C30628A10368696F0F6 /* KVNProgress-dummy.m in Sources */,
+				9D5946AB533D51E460822B7297808329 /* KVNProgress.m in Sources */,
+				D3DB9892178912350E5B1F85BE31658F /* KVNProgressConfiguration.m in Sources */,
+				93C95937D8AA0579D7C1C5C09D65ED7A /* KVNRotationViewController.m in Sources */,
+				4D491D3D60445C9787BEB1DBFFFB5110 /* UIColor+KVNContrast.m in Sources */,
+				98040D329D86ED21126968FE381C52D3 /* UIImage+KVNEmpty.m in Sources */,
+				D14CDF6E0A7B65C3116F5F8D3AE03D86 /* UIImage+KVNImageEffects.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin XCBuildConfiguration section */
-		08A4E0B2B2E333EDE377DD2EFC60576C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B28BB914413089955C55D4820C4AC62C /* Pods-pruebaAuth.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-pruebaAuth/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-pruebaAuth/Pods-pruebaAuth.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_pruebaAuth;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
+/* Begin PBXTargetDependency section */
+		B23A921C24BF420F9CF8128C21FB3B20 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KVNProgress;
+			target = 03CEDB01DC9FCF232E28721AF9D03890 /* KVNProgress */;
+			targetProxy = C2A83D506E916987917CE5F290D03F1E /* PBXContainerItemProxy */;
 		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
 		12914D756594D15C6F2CA12FE5F89F1B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -420,7 +560,39 @@
 			};
 			name = Debug;
 		};
-		88ACC6E276034D409723716A684B25FD /* Release */ = {
+		340B5ACFE3E92D6A7938ADFF4354F593 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 558EFF01DE6AA15F7C362F873B9F26ED /* KVNProgress.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KVNProgress/KVNProgress-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KVNProgress/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KVNProgress/KVNProgress.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = KVNProgress;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		56A157B0A90206E959FDF72CDDFE47C7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 001C203A7B8E4864C9D203BEB9CEB6BB /* Pods-pruebaAuth.release.xcconfig */;
 			buildSettings = {
@@ -449,6 +621,73 @@
 				PRODUCT_NAME = Pods_pruebaAuth;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		707BA281B9D4BEEFF80A1FB3F6724DAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B28BB914413089955C55D4820C4AC62C /* Pods-pruebaAuth.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-pruebaAuth/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-pruebaAuth/Pods-pruebaAuth.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_pruebaAuth;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BC7F98E19BFDE3A7950E82699CDF0DE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 558EFF01DE6AA15F7C362F873B9F26ED /* KVNProgress.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/KVNProgress/KVNProgress-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KVNProgress/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KVNProgress/KVNProgress.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = KVNProgress;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -507,11 +746,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E98E0A1ED63965068069961D6B148845 /* Build configuration list for PBXNativeTarget "Pods-pruebaAuth" */ = {
+		A3A023797D4523E94A2A8B9574BB7E9E /* Build configuration list for PBXNativeTarget "KVNProgress" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				08A4E0B2B2E333EDE377DD2EFC60576C /* Debug */,
-				88ACC6E276034D409723716A684B25FD /* Release */,
+				340B5ACFE3E92D6A7938ADFF4354F593 /* Debug */,
+				BC7F98E19BFDE3A7950E82699CDF0DE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABF3666E7B4D55E2410DB22BA3AA7A50 /* Build configuration list for PBXNativeTarget "Pods-pruebaAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				707BA281B9D4BEEFF80A1FB3F6724DAC /* Debug */,
+				56A157B0A90206E959FDF72CDDFE47C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

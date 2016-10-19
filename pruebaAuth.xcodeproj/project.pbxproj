@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0B91BAF4B884926E6AF98AB7 /* Pods_pruebaAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAB551555CA4450653B465E7 /* Pods_pruebaAuth.framework */; };
 		8E1201651DB5886B00D403EC /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1201641DB5886B00D403EC /* TableViewController.swift */; };
+		8E1201671DB5CD3200D403EC /* KVNProgress.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E1201661DB5CD3200D403EC /* KVNProgress.framework */; };
 		8E7473731DB01311008690DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7473721DB01311008690DB /* AppDelegate.swift */; };
 		8E7473751DB01311008690DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7473741DB01311008690DB /* ViewController.swift */; };
 		8E7473781DB01311008690DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E7473761DB01311008690DB /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		89FD1072B20AEB60A05E6AD8 /* Pods-pruebaAuth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pruebaAuth.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pruebaAuth/Pods-pruebaAuth.debug.xcconfig"; sourceTree = "<group>"; };
 		8E1201641DB5886B00D403EC /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		8E1201661DB5CD3200D403EC /* KVNProgress.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KVNProgress.framework; path = "Pods/../build/Debug-iphoneos/KVNProgress/KVNProgress.framework"; sourceTree = "<group>"; };
 		8E74736F1DB01311008690DB /* pruebaAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pruebaAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E7473721DB01311008690DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E7473741DB01311008690DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E1201671DB5CD3200D403EC /* KVNProgress.framework in Frameworks */,
 				0B91BAF4B884926E6AF98AB7 /* Pods_pruebaAuth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,6 +92,7 @@
 		D0559C1F91E6ACB6C27D3D02 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8E1201661DB5CD3200D403EC /* KVNProgress.framework */,
 				AAB551555CA4450653B465E7 /* Pods_pruebaAuth.framework */,
 			);
 			name = Frameworks;
@@ -344,6 +348,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = E5F4JMN6W8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/KVNProgress",
+				);
 				INFOPLIST_FILE = pruebaAuth/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.barcenas.pruebaAuth;
@@ -358,6 +366,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = E5F4JMN6W8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/KVNProgress",
+				);
 				INFOPLIST_FILE = pruebaAuth/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.barcenas.pruebaAuth;

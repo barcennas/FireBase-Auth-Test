@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>KVNProgress.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-pruebaAuth.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -12,7 +17,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>8D04B02FC7F410D3E40E7147A2975845</key>
+		<key>03CEDB01DC9FCF232E28721AF9D03890</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>168DDA079303D53DBF83B9834A399339</key>
 		<dict>
 			<key>primary</key>
 			<true/>
