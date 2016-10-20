@@ -16,7 +16,7 @@ struct postStruct {
     let content : String!
 }
 
-class TableViewController: UITableViewController {
+class TableViewController: UITableViewController, UIPopoverPresentationControllerDelegate {
 
     let databaseRef = FIRDatabase.database().reference()
     
@@ -27,7 +27,7 @@ class TableViewController: UITableViewController {
 
         self.navigationItem.hidesBackButton = true
         
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addItem))
+        //self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(showAddPopup))
         
         //self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(logout))
         
@@ -41,6 +41,23 @@ class TableViewController: UITableViewController {
             self.tableView.reloadData()
         })
     }
+    
+    func popoverPresentationControllerDidDismissPopover(_ popoverPresentationController: UIPopoverPresentationController) {
+        self.tableView.reloadData()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "addPopover" {
+            let popoverViewController = segue.destination as UIViewController
+            popoverViewController.modalPresentationStyle = UIModalPresentationStyle.popover
+            popoverViewController.popoverPresentationController!.delegate = self
+        }
+    }
+    
+    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+        return UIModalPresentationStyle.none
+    }
+    
     
     func addItem(){
         let title = "Title"
